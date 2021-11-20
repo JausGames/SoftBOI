@@ -10,6 +10,7 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private int playerIndex = 0;
     [Header("Action")]
     [SerializeField] bool attacking;
+    [SerializeField] bool attackingH;
     // Start is called before the first frame update
 
     public bool Attacking
@@ -31,6 +32,28 @@ public class PlayerCombat : MonoBehaviour
             {
                 attacking = value;
                 animmator.SetBool("attack", attacking);
+            }
+        }
+    }
+    public bool AttackingH
+    {
+        get
+        {
+            return attackingH;
+        }
+        set
+        {
+            if (!attackingH && value)
+            {
+                attackingH = value;
+                Debug.Log("PlayerCombat, Attacking : attacking horizontal = " + attackingH);
+                Debug.Log("PlayerCombat, Attacking : value = " + value);
+                animmator.SetBool("attackH", attackingH);
+            }
+            else if (attackingH && !value)
+            {
+                attackingH = value;
+                animmator.SetBool("attackH", attackingH);
             }
         }
     }

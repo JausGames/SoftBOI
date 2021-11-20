@@ -14,6 +14,7 @@ namespace Inputs
         [SerializeField] PlayerCombat combat = null;
         [SerializeField] private Vector2 move;
         [SerializeField] private bool attack;
+        [SerializeField] private bool attackH;
         [SerializeField] int index;
 
         private Controls controls;
@@ -59,6 +60,12 @@ namespace Inputs
             if (combat == null) return;
             attack = !context.canceled; ;
             combat.Attacking = attack;
+        }
+        public void OnAttackH(CallbackContext context)
+        {
+            if (combat == null) return;
+            attackH = !context.canceled; ;
+            combat.AttackingH = attackH;
         }
         public void OnMove(Vector2 move)
         {

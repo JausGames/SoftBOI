@@ -49,6 +49,7 @@ MonoBehaviour:
   combat: {fileID: 0}
   move: {x: 0, y: 0}
   attack: 0
+  attackH: 0
   index: 0
 --- !u!114 &5419790344614243613
 MonoBehaviour:
@@ -107,6 +108,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d7d0a4db-3394-4ec7-a9e1-ecc5f4feff49
     m_ActionName: Player/Attack[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6492912872998514446}
+        m_TargetAssemblyTypeName: Inputs.PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnAttackH
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 599c05e0-5412-4c94-a225-095b86954310
+    m_ActionName: Player/AttackH[/Keyboard/leftCtrl]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
