@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3193a30c746653249800884905ba506b, type: 3}
+  m_Name: IdleWeaponless
+  m_EditorClassIdentifier: 
+  spineAngularDrives:
+  - 150
+  - 150
+  spineMassScales:
+  - 1
+  - 1
+  middleSpineAngularDrives:
+  - 100
+  - 120
+  middleSpineMassScales:
+  - 1
+  - 1
+  neckAngularDrives:
+  - 10
+  - 15
+  neckMassScales:
+  - 1
+  - 1
+  thighsAngularDrives:
+  - 100
+  - 100
+  - 100
+  - 100
+  thighsMassScales:
+  - 1
+  - 1
+  - 1
+  - 1
+  shinsAngularDrives:
+  - 100
+  - 100
+  - 100
+  - 100
+  shinsMassScales:
+  - 1
+  - 1
+  - 1
+  - 1
+  upperarmsAngularDrives:
+  - 100
+  - 90
+  - 100
+  - 90
+  upperarmsMassScales:
+  - 1
+  - 1
+  - 1
+  - 1
+  forearmsAngularDrives:
+  - 75
+  - 80
+  - 75
+  - 80
+  forearmsMassScales:
+  - 1
+  - 1
+  - 1
+  - 1
+  handsAngularDrives:
+  - 50
+  - 50
+  - 50
+  - 50
+  handsMassScales:
+  - 1
+  - 1
+  - 1
+  - 1
+  weaponsAngularDrives:
+  - 70
+  - 70
+  - 70
+  - 70
+  weaponsMassScales:
+  - 1
+  - 1
+  - 1
+  - 1
